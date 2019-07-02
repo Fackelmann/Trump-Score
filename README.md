@@ -28,14 +28,13 @@ POST
 
 ### Data Params
 
- {"tweet": "<body of the tweet"}
+ {"tweet": body_of_the_tweet}
 
 ### Success Response:
 
-<What should the status code be on success and is there any returned data? This is useful when people need to to know what their callbacks should expect!>
 
 { "status": 200 
-  "msg":"<Trump Score>"}
+  "msg":trump_score}
   
 ### Example
 
@@ -58,7 +57,7 @@ Docker configuration is provided. Simply download the repo and run
 - docker-compose build
 - docker-compose up
 
-Service is available at 0.0.0.0:5000
+Service is available at 0.0.0.0/5000
 
 ## To do
 - Expand API. Current version is just a raw Proof of Concept without any error handling.
@@ -71,7 +70,11 @@ Service is available at 0.0.0.0:5000
 
 ## References
 [1] http://trumptwitterarchive.com
+
 [2] Z. Cheng, J. Caverlee, and K. Lee. You Are Where You Tweet: A Content-Based Approach to Geo-locating Twitter Users. In Proceeding of the 19th ACM Conference on Information and Knowledge Management (CIKM), Toronto, Oct 2010. https://archive.org/details/twitter_cikm_2010
+
 [3] https://community.periscopedata.com/t/x1fy7p/barack-obamas-tweet-history
+
 [4] https://www.kaggle.com/kapastor/democratvsrepublicantweets
+
 [5] https://www.tensorflow.org/tutorials/keras/basic_text_classification
