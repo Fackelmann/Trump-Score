@@ -14,6 +14,10 @@ This features were then used to train a Deep Neural Network using TensorFlow and
 
 The vectorizer for the input text and the ML model can be found under ./web/model_data.
 
+You can access the jupyter notebooks used to gather the data and train the model:
+- [Data extraction and pre-processing](ML/data_extraction.ipynb)
+- [Train model](ML/train_model.ipynb)
+
 ## API
 
 The current specification only provides one API call. This will POST the tweet to be analyzed, and the response will be a status message (200), and the likelihood that it belongs to Trump
@@ -60,10 +64,11 @@ Docker configuration is provided. Simply download the repo and run
 Service is available at 0.0.0.0/5000
 
 ## To do
-- Expand API. Current version is just a raw Proof of Concept without any error handling.
-- Deploy API in AWS
-- Provide Jupyter notebooks used to train the model
-- Implement twitter bot to provide results on Twitter when requested. You can know how "Trumpy" you and your friends are!
+
+- [ ] Expand API. Current version is just a raw Proof of Concept without any error handling.
+- [ ] Deploy API in AWS
+- [X] Provide Jupyter notebooks used to train the model
+- [ ] Implement twitter bot to provide results on Twitter when requested. You can know how "Trumpy" you and your friends are!
 
 ## Future development ideas
 - Obtain the bi-gram features and see how accuracy is affected. My prediction is that it should improve, as combination such as "Make America" should are more likely to be made by Trump that by other users/politicians.
