@@ -24,7 +24,7 @@ The current specification only provides one API call. This will POST the tweet t
 
 ### URL
 
-0.0.0.0:5000/request
+0.0.0.0:5000/predict
 
 ### Method
 
@@ -61,7 +61,7 @@ Docker configuration is provided. Simply download the repo and run
 - docker-compose build
 - docker-compose up
 
-Service is available at 0.0.0.0/5000
+Service is available at 0.0.0.0:5000
 
 ## To do
 
