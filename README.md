@@ -83,7 +83,7 @@ Service is available at 0.0.0.0:5000
 ## To do
 
 - [ ] Expand API. Current version is just a raw Proof of Concept without any error handling.
-- [ ] Deploy API in AWS
+- [X] Deploy API in AWS
 - [X] Provide Jupyter notebooks used to train the model
 - [ ] Implement twitter bot to provide results on Twitter when requested. You can know how "Trumpy" you and your friends are!
 
