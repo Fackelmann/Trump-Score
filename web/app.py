@@ -27,7 +27,7 @@ class Predict(Resource):
         tweet = posted_data["tweet"]
         tweet_parsed = [sparse_row.indices for sparse_row in vectorizer.transform([tweet])][0].tolist()
 
-        if len(tweet.strip()) > 256:
+        if len(tweet.split()) > 256:
             ret_json = {
                 "status":301,
                 "msg":"Error. Input text is longer than 256 words."
