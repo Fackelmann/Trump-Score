@@ -2,6 +2,23 @@
 
 Machine Learning model trained using TensorFlow and Keras that predicts if a tweet belongs to Trump. A RESTful API has been implemented around it to provide a "Trump Score", this is, the likelihood that a tweet belongs to Trump.
 
+
+## Try me!
+
+We are finally live. Server is located at trumpscore.danielgplaza.com:5000
+
+You can use any method you like to access the API. For example, using curl:
+
+```
+#Joe Biden
+$ curl -d '{"tweet":"No childs future should be determined by their gender, race, zip code, parents income, or disability. Full stop. In a Biden administration, well make historic investments in our public schools to ensure every kid in America gets a fair shot. #StrongPublicSchools"}' -H "Content-Type: application/json"  -X POST trumpscore.danielgplaza.com:5000/predict
+{"msg":0.0,"status":200}
+
+#Donald J. Trump
+$ curl -d '{"tweet":"Joe Biden is a reclamation project. Some things are just not salvageable. China and other countries that ripped us off for years are begging for him. He deserted our military, our law enforcement and our healthcare. Added more debt than all other Presidents combined. Wont win!"}' -H "Content-Type: application/json"  -X POST trumpscore.danielgplaza.com:5000/predict
+{"msg":0.993826687335968,"status":200}
+```
+
 ## ML Model
 
 This model used ~80k tweets: ~25k Trump tweets pre-2017 [1], ~25k random user tweets [2], ~8k Obama tweets[3], and ~30k Tweets made by Democrat politicians during the last presidential election cycle[4].
